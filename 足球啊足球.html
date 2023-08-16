@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>足球啊足球</title> 
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+var cot=0;//设置一个计数器，初始值为0；作用是用来监听点击切换的时候哪一个图片应该隐藏或者显示
+function nex(){  
+ if(cot<=2){    
+  $('.imgs img').eq(cot).animate({'margin-left':'-305px'},500);    
+  cot++;  
+ }
+}
+function pre(){  
+ if(cot>0){    
+  cot--;    
+  $('.imgs img').eq(cot).animate({'margin-left':'0'},500);  
+ }
+}
+</script>
+<style>
+#footer{
+	background-color:yellow;
+	color:white;
+	clear:both;
+	text-align:center;
+	padding:5px;
+</style>
+</head>
+<body style = "background-color:#99FF99; word-break:break-all">
+<h1 style = "text-align:center;color:#00cc00">⚽FOOTBALL⚽</h1>
+ <div style="width:900px;margin:auto;overflow:hidden"> <!-- 这个最外围的容器div宽度为900px，每张图宽为300px，所以只显示3张，剩下的图超出容器隐藏起来 -->  
+  <div class="imgs" style="width:50000px;"><!--这个div的作用是让所有的图片都排在同一水平上，这样子切换的时候效果会更好-->    
+   <img src="大罗.jpg" /><!--这里的图片换上到时候自己对应的图片-->    
+   <img src="小罗.jpg" />    
+   <img src="梅西.jpg" />    
+   <img src="c罗.jpg" />    
+   <img src="姆巴佩.jpg" />    
+   <img src="孙兴愍.jpg" />  
+  </div>  
+  <div>    
+   <div onclick="pre()" style="float:left;cursor:pointer;color:blue">上一页</div>    
+   <div onclick="nex()" style="float:right;cursor:pointer;color:blue">下一页</div>  
+  </div>
+ </div>
+ 
+ <p style = "text-align:center"><big>☝以上是我比较喜欢的几个球星☝
+ </big></p>
+ 
+<h2>大罗</h2>
+<p style = "text-indent:2em">大罗对于00后来说比较陌生，90后应该比较熟悉。
+		他可以说是当时足坛的一个怪物，速度快的同时脚下功夫也相当细腻，
+		而且又高又壮，是一个十分全面的前锋。记得曾经看大罗的过人视频，
+		行云流水，一气呵成，简直就是艺术。大罗的钟摆式过人尤为出名，
+		不过这个动作对于膝盖的损伤特别大，这也给大罗日后伤病埋下了隐患。
+		总之，大罗在我心目中的地位，是当之无愧的“外星人”👽。
+
+</p>
+
+<h2>小罗</h2>
+<p style = "text-indent:2em">我对于小罗不太了解，但是我看过小罗的集锦视频。
+		他是第一个让我发现足球还可以这么踢的人。当时看他的视频，我默默惊呼：
+		我去，足球也能这么玩啊。他的过人非常花哨，换一个角度说就是对防守球员的戏耍。
+		但是貌似他的职业生涯也比较短暂，有种英雄气短的感觉。
+		
+<h2>梅西</h2>
+<p style = "text-indent:2em">梅西在我心中是和大罗一样的存在。记得当时还很纠结梅西和大罗谁更强，
+			在网上发现不少人和我有同样的疑惑，许多人还为这个问题吵起来了。
+			梅西的连过五人的进球和大罗的钟摆式过人戏耍门将给我留下了同样的震撼。
+			曾经的梅西偏向于进球，但是随着他年龄的增长了，目前更偏向于组织进攻，
+			现在是巴萨的进攻核心。
+</p>
+
+<h2>c罗</h2>
+<p style = "text-indent:2em">c罗是我近几年才喜欢的球星。许多人都在争论梅西和c罗谁更强，
+以前的我必然是无脑支持梅西的，但是近几年c罗的表现不得不让我这样的梅西的铁杆儿粉丝刮目相看。
+c罗在33、4岁的高龄依然能保持很高的进球数，这和他的自律是分不开的，
+他那一身强壮的肌肉着实令人羡慕。
+</p>
+
+<h2>姆巴佩</h2>
+<p style = "text-indent :2em">姆巴佩--妖星。没有比姆巴佩更年轻、更优秀的球员了！
+他今年虽然只有22岁，但是他的表现足以和梅西、c罗、内马尔的巨星相媲美！
+22岁就这么屌，他的前途属实不可限量。我觉得他将来会是和大罗一样划时代的超巨星。
+就目前他在法甲、欧冠的表现，我只能说：牛批。我希望他能不负众望，真的成为下一个大罗。
+</p>
+
+<h2>孙兴慜</h2>
+<p style = "text-indent:2em">孙兴慜是我比较晚才了解的球星。
+之所以喜欢他也是因为他是我们东亚人里罕见的能在欧洲联赛有所成就的球员。
+我曾看过他的几场比赛，觉得他的实力虽然比不上梅西、c罗这些超巨，但足以和贝尔、本泽马这些巨星媲美了。
+说他是目前的亚洲球王，也不为过分。唉，想想我国的足球，真是令人堪忧啊。
+</p>
+
+<div id = "footer">
+<a href = "index.html" >回到主页</a>
+</div>
+</body>
+</html>
